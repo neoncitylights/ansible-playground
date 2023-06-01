@@ -16,8 +16,8 @@ jobs:
           fetch-depth: 0 # needed for progressive mode to work
       - name: System information
         run: |
-          ansible-playbook --version \
-          ansible-galaxy --version \
+          ansible-playbook --version
+          ansible-galaxy --version
 
       - name: Setup developer environment
         run: |
