@@ -6,6 +6,6 @@
       - name: "test reachability"
         ping:
       - name: "install stress"
-        homebrew:
+        brew:
           name: stress
           state: present
