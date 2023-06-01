@@ -11,6 +11,10 @@ jobs:
         with:
           fetch-depth: 0 # needed for progressive mode to work
 
+      - name: Setup developer environment
+        run: |
+          ansible-galaxy collection install community.general
+
       - name: Run ansible-lint
         uses: ansible/ansible-lint-action@main
         with:
