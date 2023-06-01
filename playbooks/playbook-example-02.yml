@@ -1,0 +1,12 @@
+---
+  - name: "Playbook"
+    hosts: localhost
+
+    tasks:
+      - name: "Ping Ansible"
+        ping:
+
+      - name: "Display contents of files"
+        find:
+          path: ~/Documents/GitHub/neoncitylights/ansible-config
+          file_type: file
